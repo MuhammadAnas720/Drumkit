@@ -8,7 +8,6 @@ for (var i = 0; i < num; i++) {
 
 document.addEventListener("keydown", function(event) {
   makeSound(event.key);
-}
 });
 
 function makeSound(key) {
