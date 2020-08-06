@@ -9,7 +9,7 @@ for (var i = 0; i < num; i++) {
 
 document.addEventListener("keydown", function(event) {
   makeSound(event.key);
-  buttonAnimtion(event.Key);
+  buttonAnimtion(event.key);
 });
 
 function makeSound(key) {
@@ -57,7 +57,7 @@ function buttonAnimtion(currentKey) {
   var activeButton = document.querySelector("." + currentKey);
   activeButton.classList.add("pressed");
 
-  setTimeout(function () {
+  setTimeout(function() {
     activeButton.classList.remove("pressed");
   }, 100);
 }
